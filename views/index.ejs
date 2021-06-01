@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Express-Intro</title>
+</head>
+<body>
+
+    <div>
+        <h1>Foster Dogs Of 2020</h1>
+    </div>
+
+    <hr />
+
+    <% if (user) { %>
+        <div>
+            Welcome to my App <%- user -%>
+        </div>
+        <% } else { %>
+            <div>Please login</div>
+            <% } %>
+
+            <hr />
+            
+            <ul>
+                <% teams.forEach(function(item) { %>
+                <li>
+                    <%- item.team -%>
+                </li>
+                <% }); %>
+            </ul>
+
+            <hr />
+
+            <div>
+            <img src="/images/chappy.jpg" alt="chappy" />
+            </div>
+    
+    
+
+            <script src="/javascripts/methods.js"></script>
+            <script src="/javascripts/pets.js"></script>
+            <script src="/javascripts/photos.js"></script>
+
+</body>
+</html>
